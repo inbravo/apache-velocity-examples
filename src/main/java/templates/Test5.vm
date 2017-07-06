@@ -1,0 +1,15 @@
+#set ($myArray = ["one", "two", "three"])
+
+#foreach($item in $myArray)
+	List Item: $item
+#end
+
+#foreach($number in [1..5])
+          Current Index: $number
+#end
+
+Products prices
+
+#foreach($p in $products)
+    Name: $p.name  Price: $p.price
+#end
