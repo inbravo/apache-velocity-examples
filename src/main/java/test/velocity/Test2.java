@@ -11,12 +11,14 @@ import java.io.StringWriter;
 public class Test2 {
 
 	public Test2() throws Exception {
-		// init
+
 		Velocity.init("src/main/java/velocity.properties");
-		// get Template
-		Template template = Velocity.getTemplate("Test2.vm");
-		// getContext
-		Context context = new VelocityContext();
+
+		/* Get Velocity template */
+		final Template template = Velocity.getTemplate("Test2.vm");
+
+		/* Get Velocity context */
+		final Context context = new VelocityContext();
 
 		context.put("name", "Vova");
 		context.put("surname", "Ivanov");

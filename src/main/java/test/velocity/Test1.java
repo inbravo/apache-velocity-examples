@@ -15,7 +15,7 @@ public class Test1 {
 		Velocity.init("src/main/java/velocity.properties");
 
 		/* Get Velocity template */
-		final Template template = Velocity.getTemplate("Test4.vm");
+		final Template template = Velocity.getTemplate("Test1.vm");
 
 		/* Get Velocity context */
 		final Context context = new VelocityContext();
