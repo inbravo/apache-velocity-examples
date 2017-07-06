@@ -1,5 +1,4 @@
 *.class
-*.md
 target/
 /bin/
 
