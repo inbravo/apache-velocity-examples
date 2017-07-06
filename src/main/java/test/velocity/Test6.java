@@ -29,6 +29,7 @@ class Test6 {
 		context.put("products", products);
 
 		Template template2 = Velocity.getTemplate("Test7.vm");
+
 		Writer writer2 = new StringWriter();
 		template2.merge(context, writer2);
 		System.out.println(writer2.toString());
